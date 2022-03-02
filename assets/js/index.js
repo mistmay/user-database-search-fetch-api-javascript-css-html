@@ -224,7 +224,7 @@ function createNewUser() {
     const avatar = document.getElementById('avatar').value;
     const name = document.getElementById('name').value + ' ' + document.getElementById('surname').value;
     cardArray.forEach(element => {
-        if (element.name.toLowerCase() === name.toLocaleLowerCase()) {
+        if (element.name.toLowerCase() === name.toLowerCase()) {
             alert('Error:\nUser with same name already existing');
             checkName = true;
             return;
