@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Giuseppe Marchesiello">
+    <meta name="description" content="Exercize Html Javascript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Database Search</title>
+</head>
+
+<body>
+    <aside id="new-user-page">
+        <form>
+            <h2>Add new User:</h2>
+            <section>
+                <div>
+                    <label for="name">
+                        <span>Name:</span>
+                    </label>
+                    <input type="text" id="name" required>
+                </div>
+                <div>
+                    <label for="surname">
+                        <span>Surname:</span>
+                    </label>
+                    <input type="text" id="surname" required>
+                </div>
+                <div>
+                    <label for="gender">
+                        <span>Gender:</span>
+                    </label>
+                    <input type="text" id="gender" required>
+                </div>
+                <div>
+                    <label for="date-birth">
+                        <span>Date of Birth:</span>
+                    </label>
+                    <input type="date" id="date-birth" required>
+                </div>
+                <div>
+                    <label for="city">
+                        <span>City:</span>
+                    </label>
+                    <input type="text" id="city" required>
+                </div>
+                <div>
+                    <label for="street">
+                        <span>Street Name:</span>
+                    </label>
+                    <input type="text" id="street" required>
+                </div>
+                <div>
+                    <label for="address">
+                        <span>Address:</span>
+                    </label>
+                    <input type="text" id="address" required>
+                </div>
+                <div>
+                    <label for="zip">
+                        <span>Zip Code:</span>
+                    </label>
+                    <input type="text" id="zip" required>
+                </div>
+                <div>
+                    <label for="state">
+                        <span>State:</span>
+                    </label>
+                    <input type="text" id="state" required>
+                </div>
+                <div>
+                    <label for="country">
+                        <span>Country:</span>
+                    </label>
+                    <input type="text" id="country" required>
+                </div>
+                <div>
+                    <label for="avatar">
+                        <span>Avatar Picture URL:</span>
+                    </label>
+                    <input type="text" id="avatar" placeholder="Ex: https://site.org/image.png" required>
+                </div>
+            </section>
+            <section>
+                <button type="submit" id="submit-btn">Create New User</button>
+            </section>
+        </form>
+        <button type="button" id="return-homepage">Return to Homepage</button>
+    </aside>
+    <div id="background-title">
+        <h1>Users Database</h1>
+    </div>
+    <div id="searchbar-container">
+        <h2>Search Users:</h2>
+        <input type="text" id="search-bar" placeholder="Search Users">
+        <ul>
+            <li>
+                <label for="search-all">
+                    All
+                    <input type="radio" id="search-all" name="search-type" value="all" checked>
+                </label>
+            </li>
+            <li>
+                <label for="search-name">
+                    Name
+                    <input type="radio" id="search-name" name="search-type" value="name">
+                </label>
+            </li>
+            <li>
+                <label for="search-city">
+                    City
+                    <input type="radio" id="search-city" name="search-type" value="city">
+                </label>
+            </li>
+        </ul>
+        <button type="button" id="add-user-btn">Add&nbsp;New&nbsp;User</button>
+    </div>
+    <div id="card-container">
+        <p>Loading data....</p>
+    </div>
+    <script src="./assets/js/index.js" type="text/javascript"></script>
+</body>
+
+</html>
